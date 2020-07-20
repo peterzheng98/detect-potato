@@ -26,10 +26,6 @@ jobs:
     - name: Run on Architecture
       uses: uraimo/run-on-arch-action@v1.1.0
       with:
-        # Architecture type: armv6,armv7,aarch64,s390x,ppc64le
-        architecture: aarch64
-        # OS distribution name: ubuntu16.04, ubuntu18.04, buster, stretch, jessie
-        distribution: ubuntu:18.04
         # Additional arguments to add to docker run
         # Command/s to execute
         run: gcc -v
